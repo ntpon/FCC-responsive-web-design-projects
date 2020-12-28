@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+body {
+    line-height: 2rem;
+    background: #103566;
+}
+
+
+#title {
+    margin-top: 20px;
+    text-align: center;
+    color: #eee;
+}
+#description {
+    text-align: center;
+    color: #eee;
+    margin-top: 10px;
+}
+
+#survey-form {
+    max-width: 600px;
+    margin:20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+.form-group {
+    margin-bottom: 10px
+}
+
+.form-group label {
+    display: block;
+    
+}
+.form-group label:first-child {
+    font-weight: bold;
+}
+.form-group p {
+    font-weight: bold;
+}
+
+.form-control,.input-textarea
+ {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+}
+.input-textarea {
+    font-size: 1.2rem;
+}
+.input-radio,.input-checkbox {
+    margin-right: 10px;
+}
+
+
+.submit-button {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    background: #37af65;
+    color: #fff;
+    cursor: pointer;
+}

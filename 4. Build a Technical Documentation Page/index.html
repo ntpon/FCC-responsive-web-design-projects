@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Technical Documentation Page</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Responsive With Bootstrap</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Meta_Tag">Meta Tag</a></li>
+            <li><a class="nav-link" href="#Grid_System">Grid System</a></li>
+            <li><a class="nav-link" href="#Row_&_Container">Row & Container</a></li>
+            <li><a class="nav-link" href="#Row_&_Grid">Row & Grid</a></li>
+            <li><a class="nav-link" href="#Image">Image</a></li>
+            <li><a class="nav-link" href="#Heading">Heading</a></li>
+            <li><a class="nav-link" href="#Text_Align">Text Align</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>
+                    Responsive Website คือ เว็บไซต์ที่สามารถรองรับการแสดงผลตามขนาดหน้าจอ ของอุปกรณ์ทุกชนิด
+                    โดยเว็บไซต์สามารถตรวจจับขนาดของหน้าจอ และปรับขนาด Layout ให้เหมาะสม กับอุปกรณนั้นๆ
+                    ทําให้ผู้ใช้ชมเนื้อหาได้อย่างมประสิทธภิาพ
+                </p>
+                <p>
+                    ตัวอย่างเว็บแบบ Responsive Website
+                    เว็บไซต์ที่เป็น Responsive Website จะสามารถรองรับหน้าจอได้หลากหลาย
+                    เช่นที่หน้าจอคอมพิวเตอร์จะแสดงทั้ง 3 คอลัม แต่หน้าจอขนาดเล็กเช่นโทรศัพท์จะแสดงเพียงแค่ 1 คอมลัม
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Meta_Tag">
+            <header>Meta Tag</header>
+            <article>
+                <p>เพื่อให้เว็บไซต์ที่สร้างขึ้นสามารถปรับย่อและขยายขนาดตามหน้าจอได้ จำเป็นต้องเพิ่ม Tag Meta ไว้ภายใน
+                    Tag head ของไฟล์ HTML
+                </p>
+                <code>
+                    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;<br />
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Grid_System">
+            <header>Grid System</header>
+            <article>
+                <p>เพื่อให้รองรับการแสดงผลในหน้าจอที่หลากหลาย Bootstrp ได้มีคลาสสำหรับจัดการ คือระบบ Grid System
+                    ซึ่งจะแบ่งหน้าจอเป็น 5 ขนาดได้แก่
+                </p>
+                <ul>
+                    <li> Extra Small ขนาดเล็กมาก เช่น โทรศัพท์หรือSmart Watch</li>
+                    <li> Small ขนาดเล็ก เช่น โทรศัพท์</li>
+                    <li> Medium ขนาดกลาง เช่น Tablet</li>
+                    <li> Large ขนาดใหญ่ เช่น หน้าจอคอมพิวเตอร์</li>
+                    <li> Extra large ขนาดใหญ่มาก เช่น หน้าจอคอมพิวเตอร์หรือโทรทัศน์</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Row_&_Container">
+            <header>Row & Container</header>
+            <article>
+                <p>เพื่อให้ใช้งานร่วมกับระบบ Grid System สามารถใช้คลาส row และคลาส container โดยคุณสมบัติของคลาส row
+                    จะมี ความกว้างเท่ากับ 100% ของหน้าจอ คือ ชิดทั้งซ้ายและขวาและมีทั้งหมด 12
+                    คอลัมเพื่อใช้งานร่วมกับระบบ Grid System ส่วน class container จะมีคุณสมบัติ กว้างมากที่สุด
+                    (max-width) และมีการเว้นขอบซ้าย และขวาเล็กน้อย
+                </p>
+                <p>
+                    ตัวอย่าง code การใช้งานคลาส row และ
+                </p>
+                <code>
+                    &lt;div class=&quot;container&quot;&gt;<br />
+                    &lt;div class=&quot;row&quot;&gt;&lt;/div&gt;<br />
+                &lt;/div&gt;
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Row_&_Grid">
+            <header>Row & Grid</header>
+            <article>
+                <p>จะใช้ระบบ Grid System เพื่อแบ่งหน้าจอให้แสดงผลตามขนาดที่แตกต่างกัน โดยภายใน 1 row จะประกอบด้วย 12
+                    คอลัมน์ ซึ่งสามารถใช้คลาสจากตาราง Grid System มากำหนดได้ว่าที่ ขนาดหน้าจอแบบใดจะให้แสดงผลกี่คอลัมน์
+                    โดยขนาดหน้าจอที่มีความเล็กกว่าที่กำหนดไว้จะแสดง เต็ม 12 คอลัมน์
+                </p>
+                <p>
+                    ตัวอย่างการใช้ col โดยเราจะ แทรกสีพื้นหลังลงในข้อความด้วย stye เพื่อให้เห็นความแตกต่าง
+                    โดยเป็นสีฟ้าและสีเขียว
+                </p>
+
+                <code>
+                &lt;div class=&quot;row&quot;&gt;<br />
+                &lt;div style=&quot;background-color: blue;&quot; class=&quot;col-md-4&quot;&gt;Hello&lt;/div&gt;<br />
+                &lt;div style=&quot;background-color: green;&quot; class=&quot;col-md-8&quot;&gt;Good Moring&lt;/div&gt;<br />
+           &lt;/div&gt;
+            </code>
+                <p>ในตัวอย่างนี้จะให้หน้าจอขนาดกลางขึ้นไปที่ Hello ใช้จำนวน 4 คอลัมน์ และ Good morning จะใช้ 8 คอลัมน์
+                    ส่วนหน้าจอขนาดที่มีขนาดเล็กกว่าหน้าจอขนาดกลางระบบจะ แสดงผลอย่างละ 12 คอลัมน์ให้อัตโนมัติ</p>
+                <p>ให้ทดลองย่อบราวเซอร์เพื่อดูความแตกต่าง</p>
+            </article>
+        </section>
+        <section class="main-section" id="Image">
+            <header>Image</header>
+            <article>
+                <p>คลาสสำหรับจัดการรูปภาพ</p>
+                <ul>
+                    <li>
+                        img-fluid : สำหรับให้ภาพขยายตามขนาดของหน้าจอ
+                    </li>
+                    <li>
+                        rounded : แทรกกรอบที่มีความโค้ง
+                    </li>
+                    <li>
+                        rounded-circle : แทรกกรอบวงกลม
+                    </li>
+                    <li>
+                        img-thumbnail : กรอบสี่เหลี่ยม และเป็นภาพสำหรับ thumbnail
+                    </li>
+                </ul>
+                <code>
+                    &lt;img src=&quot;image/picture-1.jpg&quot; class=&quot;img-fluid rounded&quot;&gt;<br />
+                    &lt;img src=&quot;image/picture-1.jpg&quot; class=&quot;img-fluid rounded-circle&quot;&gt;<br />
+                    &lt;img src=&quot;image/picture-1.jpg&quot; class=&quot;img-fluid img-thumbnail&quot;&gt;
+                </code>
+            </article>
+
+        </section>
+        <section class="main-section" id="Heading">
+            <header>Heading</header>
+            <article>
+                <p>เป็นคลาสสำหรับจัดการแสดงผลรูปแบบหัวข้อตัวอักษร มีรูปแบบและขนาดดังตาราง โดยสามารถใช้คลาสของ Bootstrap
+                    เพื่อจัดการเปลี่ยนขนาดได้โดยไม่ต้องเขียน Tag ของ h1-h6 ของภาษาhtml และได้รับความเป็น responsive
+                </p>
+                <code>
+                    &lt;p class=&quot;h1&quot;&gt;Hello&lt;/p&gt;<br />
+                    &lt;p class=&quot;h2&quot;&gt;Hello&lt;/p&gt;<br />
+                    &lt;p class=&quot;h3&quot;&gt;Hello&lt;/p&gt;<br />
+                    &lt;p class=&quot;h4&quot;&gt;Hello&lt;/p&gt;<br />
+                    &lt;p class=&quot;h5&quot;&gt;Hello&lt;/p&gt;<br />
+                    &lt;p class=&quot;h6&quot;&gt;Hello&lt;/p&gt;
+                </code>
+            </article>
+
+        </section>
+        <section class="main-section" id="Text_Align">
+            <header>Text Align</header>
+            <article>
+                <p>เป็นคลาสสำหรับกำหนดตำแหน่งของตัวหนังสือทางแนวนอนโดยสามารถจัดชิดซ้าย กลาง
+                    และชิดขวาเพื่อเพิ่มความสะดวกและรวดเร็วในการใช้งาน
+
+                </p>
+                <ul>
+                    <li>
+                        text-left
+                        จัดตัวหนังสือชิดซ้าย
+                    </li>
+                    <li>
+                        text-center
+                        จัดตัวหนังสืออยู่กลาง
+                    </li>
+                    <li>
+                        text-right
+                        จัดตัวหนังสือชิดขวา
+                    </li>
+                </ul>
+                <code>
+                    &lt;p class=&quot;text-left&quot;&gt;Left&lt;/p&gt;<br />
+                    &lt;p class=&quot;text-center&quot;&gt;Center&lt;/p&gt;<br />
+                    &lt;p class=&quot;text-right&quot;&gt;Right&lt;/p&gt;
+                </code>
+            </article>
+
+        </section>
+    </main>
+</body>
+
+</html>
